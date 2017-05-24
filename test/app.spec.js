@@ -12,4 +12,10 @@ describe('volumeOfCylinder', function (){
     it('should return volume of cylinder', function ()    {
         expect(app.volumeOfCylinder(2, 2)).to.eql(6.283185307179586);
     });
+    it('should return false, argument not number', function ()    {
+        expect(app.volumeOfCylinder("e", "q")).to.eql(false);
+    });
+    it('should return false argument lower than 0', function ()    {
+        expect(app.volumeOfCylinder(1, -2)).to.eql(false);
+    });
 });
