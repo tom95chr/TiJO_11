@@ -10,6 +10,15 @@ function getDescendingNumbers(start, stop)
     return result;
 }
 
+function volumeSphera(radius,volume){
+    fieldSphere = Math.PI * radius * 2;;
+    return fieldSphere;
+};
+
 module.exports = {
     getDescendingNumbers: getDescendingNumbers
+
 };
+
+
+
