@@ -10,13 +10,19 @@ function getDescendingNumbers(start, stop)
     return result;
 }
 
-function volumeSphera(radius,volume){
-    fieldSphere = Math.PI * radius * 2;;
+function volumeSphera(radius) {
+    if (radius > 0) {
+        fieldSphere = Math.PI * radius * radius;
+    } else {
+        System.out.println("zla wartosc");
+    }
+}
     return fieldSphere;
-};
+}
 
 module.exports = {
     getDescendingNumbers: getDescendingNumbers
+    volumeSphera: volumeSphera
 
 };
 

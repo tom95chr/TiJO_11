@@ -12,6 +12,18 @@ describe('getDescendingNumbers', function (){
 
 describe('volumeSphera', function (){
     it('should return field sphere', function ()    {
-        expect(app.volumeSphera(3,f)).to.eql('50');
+        expect(app.volumeSphera(3)).to.eql('50');
+    });
+});
+
+describe('volumeSphera', function (){
+    it('should return false', function ()    {
+        expect(app.volumeSphera(f)).to.eql(false);
+    });
+});
+
+describe('volumeSphera', function (){
+    it('should return false', function ()    {
+        expect(app.volumeSphera(-3)).to.eql(false);
     });
 });
